@@ -2,66 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mountsview Technical College - Center for Technical Skills and Health Sciences." />
   <title>Mountsview Technical College</title>
-  <link rel="stylesheet" href="styles/styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header class="header">
-    <div class="logo">Mountsview Technical College</div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1 class="logo">Mountsview</h1>
+      <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="nav" role="navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
-    <h1>Center for Technical Skills and Health Sciences</h1>
-    <a href="#courses" class="cta-btn">Apply Now</a>
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h2>Center for Technical Skills and Health Sciences</h2>
+        <p>Empowering your career through hands-on training and innovation.</p>
+        <button class="apply-btn open-modal">Apply Now</button>
+      </div>
+    </div>
   </section>
 
-  <section id="courses" class="courses">
-    <h2>Explore Our Programs</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>IT</h3>
+  <!-- Courses -->
+  <section class="courses container">
+    <h2 class="section-title">Explore Our Programs</h2>
+    <div class="course-grid">
+
+      <!-- IT -->
+      <div class="course-card">
+        <h3><i class="fas fa-laptop-code"></i> Information Technology</h3>
         <ul>
           <li>Digital Literacy</li>
           <li>Graphic Design</li>
           <li>Computer Repairs</li>
         </ul>
-        <button class="apply-btn">Apply Now</button>
+        <button class="apply-btn open-modal">Apply Now</button>
       </div>
-      <div class="card">
-        <h3>Technical</h3>
+
+      <!-- Technical -->
+      <div class="course-card">
+        <h3><i class="fas fa-cogs"></i> Technical Skills</h3>
         <ul>
           <li>Fashion Design</li>
           <li>Hairdressing</li>
-          <li>Electronics</li>
+          <li>Electrical & Electronics</li>
         </ul>
-        <button class="apply-btn">Apply Now</button>
+        <button class="apply-btn open-modal">Apply Now</button>
       </div>
-      <div class="card">
-        <h3>Health</h3>
+
+      <!-- Health -->
+      <div class="course-card">
+        <h3><i class="fas fa-user-nurse"></i> Health Sciences</h3>
         <ul>
-          <li>CNA/HSS</li>
+          <li>CNA / HSS</li>
           <li>Phlebotomy</li>
           <li>Community Health</li>
+          <li>Nutrition</li>
         </ul>
-        <button class="apply-btn">Apply Now</button>
+        <button class="apply-btn open-modal">Apply Now</button>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
-    Designed by <span class="fancy">✨ Elvis ✨</span>
+    <p>Designed by <span class="designer">✨ Elvis ✨</span></p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="applyModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Apply to Mountsview</h3>
+      <p>Choose how you'd like to reach us:</p>
+      <div class="modal-actions">
+        <a href="tel:0700635325" class="modal-btn"><i class="fas fa-phone"></i> Call Us</a>
+        <a href="https://wa.me/254700635325?text=Hello,%20I’m%20interested%20in%20applying%20to%20Mountsview%20Technical%20College.%20Please%20guide%20me." class="modal-btn" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://forms.gle/qCDMy7oj5mysPui28" class="modal-btn" target="_blank"><i class="fas fa-file-alt"></i> Google Form</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
+
